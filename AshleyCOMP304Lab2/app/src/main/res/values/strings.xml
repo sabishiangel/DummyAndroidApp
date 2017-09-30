@@ -8,63 +8,63 @@
     <string name="chiR2">Grand Lake</string>
 
     <string name="chiF1">Congee</string>
-    <double name="chiC1">7.50</double>
+    <string name="chiC1">7.50</string>
     <string name="chiF2">Cha Siu Pork</string>
-    <double name="chiC2">9.50</double>
+    <string name="chiC2">9.50</string>
     <string name="chiF3">Chow Mein</string>
-    <double name="chiC3">10.75</double>
+    <string name="chiC3">10.75</string>
     <string name="chiF4">Duck Wrap</string>
-    <double name="chiC4">24.69</double>
+    <string name="chiC4">24.69</string>
 
     <!--Japanese Food-->
     <string name="jpnR1">Spring Sushi</string>
     <string name="jpnR2">Santouka Ramen</string>
 
     <string name="jpnF1">Sushi</string>
-    <double name="jpnC1">14.99</double>
+    <string name="jpnC1">14.99</string>
     <string name="jpnF2">Tempura</string>
-    <double name="jpnC2">12.99</double>
+    <string name="jpnC2">12.99</string>
     <string name="jpnF3">Miso Ramen</string>
-    <double name="jpnC3">12.99</double>
+    <string name="jpnC3">12.99</string>
     <string name="jpnF4">Pork Ramen</string>
-    <double name="jpnC4">12.99</double>
+    <string name="jpnC4">12.99</string>
 
     <!--American Food-->
     <string name="usaR1">McDonalds</string>
     <string name="usaR2">Cheesecake Factory</string>
 
     <string name="usaF1">Cheeseburger</string>
-    <double name="usaC1">2.49</double>
+    <string name="usaC1">2.49</string>
     <string name="usaF2">French Fries</string>
-    <double name="usaC2">1.59</double>
+    <string name="usaC2">1.59</string>
     <string name="usaF3">Oreo Cheescake</string>
-    <double name="usaC3">10.33</double>
+    <string name="usaC3">10.33</string>
     <string name="usaF4">Strawberry Cheescake</string>
-    <double name="usaC4">12.45</double>
+    <string name="usaC4">12.45</string>
 
     <!--Indian Food-->
     <string name="indR1">Bombay Buffet</string>
     <string name="indR2">Golden Spoon</string>
 
     <string name="indF1">Curry Rice</string>
-    <double name="indC1">7.95</double>
+    <string name="indC1">7.95</string>
     <string name="indF2">Pita Bread</string>
-    <double name="indC2">5.90</double>
+    <string name="indC2">5.90</string>
     <string name="indF3">Samosa</string>
-    <double name="indC3">3.95</double>
+    <string name="indC3">3.95</string>
     <string name="indF4">Butter Chicken</string>
-    <double name="indC4">9.95</double>
+    <string name="indC4">9.95</string>
 
     <!--International Food-->
     <string name="worldR1">Irma Buffet</string>
     <string name="worldR2">Circle of Food</string>
 
     <string name="worldF1">Fillet Mignon</string>
-    <double name="worldC1">69.95</double>
+    <string name="worldC1">69.95</string>
     <string name="worldF2">Hurricane Roll</string>
-    <double name="worldC1">24.75</double>
+    <string name="worldC2">24.75</string>
     <string name="worldF3">Shanghai Noodles</string>
-    <double name="worldC1">6.99</double>
+    <string name="worldC3">6.99</string>
     <string name="worldF4">Gelato Ice Cream</string>
-    <double name="worldC1">4.54</double>
+    <string name="worldC4">4.54</string>
 </resources>
