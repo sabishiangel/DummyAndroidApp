@@ -77,6 +77,7 @@ public class RestaurantActivity extends AppCompatActivity {
                 title.setText(R.string.chiR1);
                 menu1.setText(R.string.chiF1);
                 menu2.setText(R.string.chiF2);
+                cost1.setText((double)R.string.chiC1);
                 break;
             case "Grand Lake":
                 title.setText(R.string.chiR2);
