@@ -30,7 +30,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/restTitle"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="101dp" />
+        tools:layout_editor_absoluteY="101dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/cost1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox1"
+        android:layout_marginLeft="30dp"/>
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -39,9 +49,19 @@
         android:text=""
         android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox1"
+        app:layout_constraintTop_toBottomOf="@id/cost1"
         tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="133dp" />
+        tools:layout_editor_absoluteY="133dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/cost2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkBox2"
+        android:layout_marginLeft="30dp"/>
 
     <Button
         android:id="@+id/bttncont"
@@ -52,6 +72,7 @@
         android:visibility="invisible"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@id/checkBox2"
+        android:layout_marginLeft="30dp"/>
 
 </android.support.constraint.ConstraintLayout>

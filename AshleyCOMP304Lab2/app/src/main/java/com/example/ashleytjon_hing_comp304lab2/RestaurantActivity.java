@@ -16,6 +16,8 @@ public class RestaurantActivity extends AppCompatActivity {
     private TextView title;
     private CheckBox menu1;
     private CheckBox menu2;
+    private TextView cost1;
+    private TextView cost2;
     private Button contbttn;
     private double cost = 0;
 
@@ -27,9 +29,7 @@ public class RestaurantActivity extends AppCompatActivity {
         menu1.setOnClickListener(new View.OnClickListener()  {
 
             public void onClick (View v) {
-                menu1.isChecked() ?
-                        cost = cost+ :
-                        "This option is not checked");
+                menu1.isChecked()
             }
         });
 
@@ -38,6 +38,8 @@ public class RestaurantActivity extends AppCompatActivity {
         menu1 = (CheckBox) findViewById(R.id.checkBox1);
         menu2 = (CheckBox) findViewById(R.id.checkBox2);
         contbttn = (Button) findViewById(R.id.bttncont);
+        cost1 = (TextView) findViewById(R.id.cost1);
+        cost2 = (TextView) findViewById(R.id.cost2);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
