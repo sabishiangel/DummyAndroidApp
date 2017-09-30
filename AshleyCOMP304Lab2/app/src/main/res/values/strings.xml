@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Order UP</string>
+    <string name="start">Enter</string>
+    <string name="cont">Continue</string>
+
+    <!--Chinese Food-->
+    <string name="chiR1">Congee Wong</string>
+    <string name="chiR2">Grand Lake</string>
+
+    <string name="chiF1">Congee</string>
+    <string name="chiF2">Cha Siu Pork</string>
+    <string name="chiF3">Chow Mein</string>
+    <string name="chiF4">Duck Wrap</string>
+
+    <!--Japanese Food-->
+    <string name="jpnR1">Spring Sushi</string>
+    <string name="jpnR2">Santouka Ramen</string>
+
+    <string name="jpnF1">Sushi</string>
+    <string name="jpnF2">Tempura</string>
+    <string name="jpnF3">Miso Ramen</string>
+    <string name="jpnF4">Pork Ramen</string>
+
+    <!--American Food-->
+    <string name="usaR1">McDonalds</string>
+    <string name="usaR2">Cheesecake Factory</string>
+
+    <string name="usaF1">Cheeseburger</string>
+    <string name="usaF2">French Fries</string>
+    <string name="usaF3">Oreo Cheescake</string>
+    <string name="usaF4">Strawberry Cheescake</string>
+
+    <!--Indian Food-->
+    <string name="indR1">Bombay Buffet</string>
+    <string name="indR2">Golden Spoon</string>
+
+    <string name="indF1">Curry Rice</string>
+    <string name="indF2">Pita Bread</string>
+    <string name="indF3">Samosa</string>
+    <string name="indF4">Butter Chicken</string>
+
+    <!--International Food-->
+    <string name="worldR1">Irma Buffet</string>
+    <string name="worldR2">Circle of Food</string>
+
+    <string name="worldF1">Fillet Mignon</string>
+    <string name="worldF2">Hurricane Roll</string>
+    <string name="worldF3">Shanghai Noodles</string>
+    <string name="worldF4">Gelato Ice Cream</string>
+</resources>
