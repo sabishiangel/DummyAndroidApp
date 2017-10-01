@@ -2,6 +2,12 @@
     <string name="app_name">Order UP</string>
     <string name="start">Enter</string>
     <string name="cont">Continue</string>
+    <string name="back">Back</string>
+    <string name="customer">Name: </string>
+    <string name="addr">Address: </string>
+    <string name="cred">Credit Card: </string>
+    <string name="col">Preferred \nPackaging Color: </string>
+    <string name="guestNum">Number of Guests: </string>
 
     <!--Chinese Food-->
     <string name="chiR1">Congee Wong</string>
@@ -67,4 +73,6 @@
     <string name="worldC3">6.99</string>
     <string name="worldF4">Gelato Ice Cream</string>
     <string name="worldC4">4.54</string>
+
+
 </resources>

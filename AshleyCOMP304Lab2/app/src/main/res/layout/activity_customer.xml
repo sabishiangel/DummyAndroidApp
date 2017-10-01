@@ -6,4 +6,131 @@
     android:layout_height="match_parent"
     tools:context="com.example.ashleytjon_hing_comp304lab2.CustomerActivity">
 
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customer"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/addresstxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/addr"
+        app:layout_constraintTop_toBottomOf="@id/nametxt"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+    android:id="@+id/credittxt"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="@string/cred"
+    app:layout_constraintTop_toBottomOf="@id/addresstxt"
+    android:layout_marginTop="71dp"
+    android:layout_marginLeft="8dp"
+    app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/coltxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/col"
+        app:layout_constraintTop_toBottomOf="@id/credittxt"
+        android:layout_marginTop="71dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/guesttxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/guestNum"
+        app:layout_constraintTop_toBottomOf="@id/coltxt"
+        android:layout_marginTop="71dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/nametxt"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nametxt" />
+
+    <EditText
+        android:id="@+id/addrEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/addresstxt"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addresstxt" />
+
+    <EditText
+        android:id="@+id/credEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/credittxt"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/credittxt"
+        android:maxLength="16"/>
+
+    <EditText
+        android:id="@+id/colEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/coltxt"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/coltxt" />
+    <EditText
+        android:id="@+id/guestEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toRightOf="@+id/guesttxt"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/guesttxt" />
+
+    <Button
+        android:id="@+id/finalbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:onClick="final_bttn"
+        android:text="Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/backbttn" />
+
+    <Button
+        android:id="@+id/backbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="23dp"
+        android:onClick="back_button"
+        android:text="@string/back"
+        app:layout_constraintLeft_toRightOf="@id/finalbttn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guestEdit" />
 </android.support.constraint.ConstraintLayout>

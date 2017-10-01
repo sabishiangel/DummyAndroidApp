@@ -18,29 +18,15 @@ public class RestaurantActivity extends AppCompatActivity {
     private CheckBox menu2;
     private TextView cost1;
     private TextView cost2;
+    private TextView total;
     private Button contbttn;
     private double cost = 0;
+    String message = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restaurant);
-
-        menu1.setOnClickListener(new View.OnClickListener()  {
-
-            public void onClick (View v) {
-                menu1.isChecked() ? (cost = cost + Double.parseDouble(menu1.getText().toString())): cost = cost;
-            }
-        });
-
-        check_button.setOnClickListener(new View.OnClickListener()  {
-
-            public void onClick (View v) {
-                tv.setText(check_button.isChecked() ?
-                        "This option is checked" :
-                        "This option is not checked");
-            }
-        });
 
         cType = getIntent().getStringExtra(Cuisine.cuisine_type);
         title = (TextView) findViewById(R.id.restTitle);
@@ -49,11 +35,45 @@ public class RestaurantActivity extends AppCompatActivity {
         contbttn = (Button) findViewById(R.id.bttncont);
         cost1 = (TextView) findViewById(R.id.cost1);
         cost2 = (TextView) findViewById(R.id.cost2);
+        total = (TextView) findViewById(R.id.total);
+
+
+        menu1.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                if (menu1.isChecked()) {
+                    cost = cost + Double.parseDouble(cost1.getText().toString());
+                    total.setText(Double.toString(cost));
+                }
+                if(!menu1.isChecked()){
+                    cost = cost - Double.parseDouble(cost1.getText().toString());
+                    total.setText(Double.toString(cost));
+                }
+                else {
+                }
+            }
+        });
+
+        menu2.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                if (menu2.isChecked()) {
+                    cost = cost + Double.parseDouble(cost2.getText().toString());
+                    total.setText(Double.toString(cost));
+                } if(!menu2.isChecked()){
+                    cost = cost - Double.parseDouble(cost2.getText().toString());
+                    total.setText(Double.toString(cost));
+                }
+                else {
+                }
+            }
+        });
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        switch(cType) {
+        switch (cType) {
             case "Chinese":
                 //show the menu
                 getMenuInflater().inflate(R.menu.china_restaurants, menu);
@@ -81,7 +101,7 @@ public class RestaurantActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getTitle().toString()){
+        switch (item.getTitle().toString()) {
             case "Congee Wong":
                 title.setText(R.string.chiR1);
                 menu1.setText(R.string.chiF1);
@@ -159,4 +179,14 @@ public class RestaurantActivity extends AppCompatActivity {
         return true;
     }
 
+    public void selectOrder(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, CustomerActivity.class);
+        intent.putExtra(message, total.toString());
+        startActivity(intent);
+    }
+
+    public void back_button(View view){
+        this.finish();
+    }
 }
